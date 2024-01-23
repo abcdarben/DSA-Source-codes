@@ -3,6 +3,7 @@
 from array import array
 import os
 from art import text2art
+from tabulate import tabulate
 
 item_code = ['C01', 'C02', 'C03']
 item_name = ['Burger', 'Fries', 'Sandwich']
@@ -28,4 +29,26 @@ def press_key():
 
 if __name__ == '__main__':
     display_header()
+
+    print("1. Display Menu")
+    print("2. Place Order")
+    print("3. View Order")
+    print("4. Exit")
+    choice = int(input("Please make a selection: "))
+
+
+    if choice == 1:
+        display_menu()
+    elif choice == 2:
+        #place_order()
+        print()
+    elif choice == 3:
+        #view_order()
+        print()
+    elif choice ==4:
+        print("Thank you for using McBee!")
+        print("Exiting program...")
+        exit
+    else:
+        print("Please enter a number from 1 to 4")
     display_menu()
